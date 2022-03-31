@@ -1,8 +1,27 @@
-from numpy import empty_like
+from cmath import nan
+import math
+from numpy import NaN
 from libMath import Math
 
 class getStats:
 
+    @staticmethod
+    def filter(collumn, data: list, filter = 0):
+        tab = []
+        collumn_idx = 0
+        for index, i in enumerate(data[0]):
+            if i == collumn:
+                collumn_idx = index
+            if index == len(data[0]) and collumn_idx == 0:
+                print("Wrong filter ! Quitting...")
+                exit(1)
+        for element in data:
+            if filter != 0:
+                if filter in element:
+                    tab.append(element[collumn_idx])
+            else:
+                tab.append(element[collumn_idx])
+        return (tab)
 
     @staticmethod
     def getEmptyDatas(data: list) -> int:

@@ -2,7 +2,6 @@ import csv
 import sys
 import pandas as pd
 
-from numpy import NaN
 from getStats import getStats
 
 class Describe:
