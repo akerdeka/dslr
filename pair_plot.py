@@ -3,7 +3,6 @@ import csv
 from numpy import NaN
 
 from libGraph import Graph
-from getStats import getStats
 
 class PairPlot:
 

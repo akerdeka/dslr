@@ -2,7 +2,7 @@ import csv
 import sys
 import pandas as pd
 
-from getStats import getStats
+from libMath import getStats
 
 class Describe:
 
